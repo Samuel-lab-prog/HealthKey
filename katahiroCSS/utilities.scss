@@ -3,22 +3,22 @@ $unit2: 10px;
 $unit3: 15px;
 $unit4: 20px;
 
-@for $i from 1 through 10 {
+@for $i from 1 through 15 {
     .m-#{$i}{margin: $i * $unit2;}
     .mx-#{$i}{margin-left: $i * $unit2; margin-right: $i * $unit2;}
     .my-#{$i}{margin-bottom: $i * $unit2; margin-top: $i * $unit2;}
-    .ml-#{$i}{margin: $i * $unit2;}
-    .mt-#{$i}{margin: $i * $unit2;}
-    .mr-#{$i}{margin: $i * $unit2;}
-    .mb-#{$i}{margin: $i * $unit2;}
+    .ml-#{$i}{margin-left: $i * $unit2;}
+    .mt-#{$i}{margin-top: $i * $unit2;}
+    .mr-#{$i}{margin-right: $i * $unit2;}
+    .mb-#{$i}{margin-bottom: $i * $unit2;}
 
     .p-#{$i}{padding: $i * $unit2;}
     .px-#{$i}{padding-left: $i * $unit2; padding-right: $i * $unit2;}
     .py-#{$i}{padding-bottom: $i * $unit2; padding-top: $i * $unit2;}
-    .pl-#{$i}{padding: $i * $unit2;}
-    .pt-#{$i}{padding: $i * $unit2;}
-    .pr-#{$i}{padding: $i * $unit2;}
-    .pb-#{$i}{padding: $i * $unit2;}
+    .pl-#{$i}{padding-left: $i * $unit2;}
+    .pt-#{$i}{padding-top: $i * $unit2;}
+    .pr-#{$i}{padding-right: $i * $unit2;}
+    .pb-#{$i}{padding-bottom: $i * $unit2;}
 
     .fs-#{$i}{font-size: $i * $unit1;}
 }
