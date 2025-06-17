@@ -16,17 +16,17 @@
   --font-4: 24px;
   --font-5: 16px;
   --font-6: 8px;
-
-  --spacing-small: 0px;
-  --spacing-medium: 16px;
-  --spacing-large: 32px;
 }
-body{
+body {
   background-color: var(--light);
   font-family: var(--font-secondary);
   color: var(dark);
 }
-*{
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
   font-family: inherit;
   color: inherit;
 }
@@ -72,43 +72,118 @@ body{
 .bg-5 {
   background-color: var(--color-5) !important;
 }
-h1{
+h1 {
   font-size: var(--font-1);
   font-family: var(--font-primary);
 }
-h2{
+h2 {
   font-size: var(--font-2);
 }
-h3{
+h3 {
   font-size: var(--font-3);
 }
-h4{
+h4 {
   font-size: var(--font-4);
 }
-h5{
+h5 {
   font-size: var(--font-5);
 }
-h6{
+h6 {
   font-size: var(--font-6);
 }
-p, a{
+p,
+a {
   font-size: var(--font-4);
 }
 
+.selected {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.background {
+  padding: 10px;
+  background-color: var(--color-2);
+  border-radius: 30px;
+}
 input[type="email"] {
   border: 2px solid #ececec;
   padding: 10px;
   border-radius: 10px;
-  outline: none; 
-  transition: all 0.3s ease; 
+  outline: none;
+  transition: all 0.3s ease;
   font-size: var(--font-4);
 }
 
 input[type="email"]:focus {
-  border-color: #4CAF50;          
-  box-shadow: 0 0 10px #4CAF50;    
-  background-color: #f9fff9;       
-  transform: scale(1.02);          
+  border-color: #4caf50;
+  box-shadow: 0 0 10px #4caf50;
+  background-color: #f9fff9;
+  transform: scale(1.02);
 }
 
+.hover-underline {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
 
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(11, 11, 11);
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+.hover-darken:hover {
+  filter: brightness(85%);
+  transition: filter 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 16px rgba(214, 214, 214, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-color-swap {
+  background-color: var(--color-primary);
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-color-swap:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.hover-background {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+.hover-background:hover {
+  cursor: pointer;
+  background-color: var(--color-1);
+  color: white;
+  border-color: whitesmoke;
+  box-shadow: 0 0 15px var(--dark);
+  transform: translateY(-5px);
+}
+.card{
+  border-radius: 15px;
+  padding: 10px;
+  background-color: var(--color-1);
+}
