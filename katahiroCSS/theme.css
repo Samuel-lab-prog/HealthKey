@@ -15,12 +15,21 @@
   --font-3: 32px;
   --font-4: 24px;
   --font-5: 16px;
+  --font-6: 8px;
 
   --spacing-small: 0px;
   --spacing-medium: 16px;
   --spacing-large: 32px;
 }
-
+body{
+  background-color: var(--light);
+  font-family: var(--font-secondary);
+  color: var(dark);
+}
+*{
+  font-family: inherit;
+  color: inherit;
+}
 .color-1 {
   color: var(--color-1) !important;
 }
@@ -63,36 +72,26 @@
 .bg-5 {
   background-color: var(--color-5) !important;
 }
-
-.text-1 {
-  color: var(--dark);
+h1{
   font-size: var(--font-1);
   font-family: var(--font-primary);
 }
-.text-2 {
-  color: var(--dark);
+h2{
   font-size: var(--font-2);
-  font-family: var(--font-secondary);
 }
-.text-3 {
-  color: var(--dark);
+h3{
   font-size: var(--font-3);
-  font-family: var(--font-secondary);
 }
-.text-4 {
-  color: var(--dark);
+h4{
   font-size: var(--font-4);
-  font-family: var(--font-secondary);
 }
-.text-5 {
-  color: var(--dark);
+h5{
   font-size: var(--font-5);
-  font-family: var(--font-secondary);
+}
+h6{
+  font-size: var(--font-6);
+}
+p, a{
+  font-size: var(--font-4);
 }
 
-.special {
-  background-color: var(--light);
-  border-radius: 30px;
-  color: var(--dark);
-  padding: 15px;
-}
