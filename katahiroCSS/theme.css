@@ -101,6 +101,7 @@ input[type="email"] {
   border-radius: 10px;
   outline: none; 
   transition: all 0.3s ease; 
+  font-size: var(--font-4);
 }
 
 input[type="email"]:focus {
