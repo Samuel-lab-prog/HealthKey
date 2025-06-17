@@ -95,3 +95,19 @@ p, a{
   font-size: var(--font-4);
 }
 
+input[type="email"] {
+  border: 2px solid #ececec;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none; 
+  transition: all 0.3s ease; 
+}
+
+input[type="email"]:focus {
+  border-color: #4CAF50;          
+  box-shadow: 0 0 10px #4CAF50;    
+  background-color: #f9fff9;       
+  transform: scale(1.02);          
+}
+
+
