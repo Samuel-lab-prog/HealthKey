@@ -21,4 +21,6 @@ $unit4: 20px;
     .pb-#{$i}{padding-bottom: $i * $unit2;}
 
     .fs-#{$i}{font-size: $i * $unit1;}
+
+    .border-rad-#{$i}{border: $i * $unit1;}
 }

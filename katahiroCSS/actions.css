@@ -1,0 +1,47 @@
+
+.hover-underline {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(11, 11, 11);
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+.hover-darken:hover {
+  filter: brightness(85%);
+  transition: filter 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 16px rgba(214, 214, 214, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-color-swap {
+  background-color: var(--color-primary);
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-color-swap:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
