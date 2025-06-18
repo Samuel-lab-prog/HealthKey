@@ -1,7 +1,7 @@
 :root {
   --color-1: #05852b;
-  --color-2: #d4f8e3;
-  --color-3: #006920;
+  --color-2: #02f065;
+  --color-3: #02611f;
   --color-4: #006920;
   --color-5: #006920;
   --light: #f3f0f0;
@@ -98,7 +98,7 @@ a {
 
 .selected {
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 .background {
   padding: 10px;
