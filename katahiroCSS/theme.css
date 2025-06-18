@@ -91,9 +91,11 @@ h5 {
 h6 {
   font-size: var(--font-6);
 }
-p,
 a {
   font-size: var(--font-4);
+}
+p{
+  font-size: var(--font-3);
 }
 
 .selected {
@@ -102,7 +104,7 @@ a {
 }
 .background {
   padding: 10px;
-  background-color: var(--color-2);
+  background-color: var(--light);
   border-radius: 30px;
 }
 input[type="email"] {
