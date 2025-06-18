@@ -1,6 +1,6 @@
 :root {
   --color-1: #05852b;
-  --color-2: #8ef0b7;
+  --color-2: #d4f8e3;
   --color-3: #006920;
   --color-4: #006920;
   --color-5: #006920;
@@ -186,4 +186,5 @@ input[type="email"]:focus {
   border-radius: 15px;
   padding: 10px;
   background-color: var(--color-1);
+  display: block;
 }

@@ -12,7 +12,7 @@
   <body class="">
     <header>
       <nav>
-        <div class="container-fluid bg-3 pos-fixed" style="height: 5vw">
+        <div class="container-fluid bg-3 pos-fixed" style="height: 5vw; z-index: 10;">
           <div class="row">
             <div class="col-3">
               <a href="" class="h-80">
@@ -62,7 +62,7 @@
     </header>
     <main>
       <section>
-        <div class="container-fluid" style="height: 60vw">
+        <div class="container-fluid" style="height: 60vw; padding-top: 5vw;">
           <div class="row h-70 px-15">
             <div class="col-6 flex-column align-start">
               <h4 class="text-4">WELCOME TO HELTHKEY WEBSITE</h4>
@@ -84,26 +84,26 @@
             </div>
           </div>
           <div class="row h-30 bg-1" id="special-services">
-            <div class="col-4 flex-column justify-start">
-              <img src="icons/0-circle.svg" alt="icon" class="w-20 mt-6" />
+            <div class="col-4 flex-column">
+              <img src="icons/0-circle.svg" alt="icon" class="w-20" />
               <h3 class="my-2 light">Insert here</h3>
-              <p class="light text-center">
+              <p class="light text-3 text-center w-70">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consequatur, odio.
               </p>
             </div>
-            <div class="col-4 flex-column justify-start">
-              <img src="icons/0-circle.svg" alt="icon" class="w-20 mt-6" />
-              <h3 class="my-2 text-3 light">Insert here</h3>
-              <p class="text-4 light text-center">
+            <div class="col-4 flex-column">
+              <img src="icons/0-circle.svg" alt="icon" class="w-20" />
+              <h3 class="my-2 light">Insert here</h3>
+              <p class="text-4 light text-center w-70">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consequatur, odio.
               </p>
             </div>
-            <div class="col-4 flex-column justify-start">
-              <img src="icons/0-circle.svg" alt="icon" class="w-20 mt-6" />
-              <h3 class="my-2 text-3 light">Insert here</h3>
-              <p class="text-4 light text-center">
+            <div class="col-4 flex-column">
+              <img src="icons/0-circle.svg" alt="icon" class="w-20" />
+              <h3 class="my-2 light">Insert here</h3>
+              <p class="text-4 light text-center w-70">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consequatur, odio.
               </p>
@@ -112,8 +112,8 @@
         </div>
       </section>
       <section>
-        <div class="container-fluid mt-15 px-15" style="height: 45vw">
-          <div class="row h-80">
+        <div class="container-fluid px-15" style="height: 45vw">
+          <div class="row">
             <div class="col-6 flex-column align-start">
               <h4>WELCOME TO HELTHKEY WEBSITE</h4>
               <h1 class="my-3">Taking care of your health is our goal</h1>
@@ -153,28 +153,32 @@
               <img src="images/doctor1.png" alt="" class="h-100" />
             </div>
           </div>
-          <div class="row h-20 bg-1">
-            <div class="col-3 flex-column">
-              <h3 class="light">Lorem</h3>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid" style="height: 10vw;">
+          <div class="row bg-1">
+            <div class="col-3 flex-column justify-start align-start pl-8 pt-3">
+              <h2 class="light pb-2">Lorem</h2>
               <p class="light">Lorem, ipsum dolor.</p>
             </div>
-            <div class="col-3 flex-column">
-              <h3 class="light">Lorem</h3>
+            <div class="col-3 flex-column justify-start align-start pl-8 pt-3">
+              <h2 class="light pb-2">Lorem</h2>
               <p class="light">Lorem, ipsum dolor.</p>
             </div>
-            <div class="col-3 flex-column">
-              <h3 class="light">Lorem</h3>
+            <div class="col-3 flex-column justify-start align-start pl-8 pt-3">
+              <h2 class="light pb-2">Lorem</h2>
               <p class="light">Lorem, ipsum dolor.</p>
             </div>
-            <div class="col-3 flex-column">
-              <h3 class="light">Lorem</h3>
+            <div class="col-3 flex-column justify-start align-start pl-8 pt-3">
+              <h2 class="light pb-2">Lorem</h2>
               <p class="light">Lorem, ipsum dolor.</p>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="container-fluid mt-10 px-15" style="height: 45vw">
+        <div class="container-fluid mt-8 px-15" style="height: 45vw">
           <div class="row h-20">
             <div class="col-12 flex-column">
               <h4>Lorem, ipsum dolor.</h4>
@@ -182,72 +186,84 @@
             </div>
           </div>
           <div class="row h-40">
-            <a href="" class="col-4 flex-column p-5 hover-background">
-              <img src="icons/0-circle.svg" alt="icon" class="h-50" />
-              <h3 class="my-1">Lorem, ipsum dolor.</h3>
-              <p class="text-center">
-                Loremasd, ipsum dolor sit amet consectetur adipisicing elit.
-                Sint ratione, error asperiores nam ut voluptatum!
-              </p>
-              <h4 class="light mt-1">Read more</h4>
-            </a>
-            <div class="col-4 flex-column p-5 hover-background">
-              <img src="icons/0-circle.svg" alt="icon" class="h-50" />
-              <h3 class="my-1">Lorem, ipsum dolor.</h3>
-              <p class="text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-                ratione, error asperiores nam ut voluptatum!
-              </p>
-              <h4 class="light mt-1">Read more</h4>
+            <div class="col-4">
+              <a href="" class="card w-90 h-90 hover-background text-center">
+                <img src="icons/0-circle.svg" alt="icon" class="h-30" />
+                <h3 class="my-1">Lorem, ipsum dolor.</h3>
+                <p class="text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  ratione, error asperiores nam ut voluptatum!
+                </p>
+                <h4 class="light mt-1">Read more</h4>
+              </a>
             </div>
-            <div class="col-4 flex-column p-5 hover-background">
-              <img src="icons/0-circle.svg" alt="icon" class="h-50" />
-              <h3 class="my-1">Lorem, ipsum dolor.</h3>
-              <p class="text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-                ratione, error asperiores nam ut voluptatum!
-              </p>
-              <h4 class="light mt-1">Read more</h4>
+            <div class="col-4">
+              <a href="" class="card w-90 h-90 hover-background text-center">
+                <img src="icons/0-circle.svg" alt="icon" class="h-30" />
+                <h3 class="my-1">Lorem, ipsum dolor.</h3>
+                <p class="text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  ratione, error asperiores nam ut voluptatum!
+                </p>
+                <h4 class="light mt-1">Read more</h4>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="" class="card w-90 h-90 hover-background text-center">
+                <img src="icons/0-circle.svg" alt="icon" class="h-30" />
+                <h3 class="my-1">Lorem, ipsum dolor.</h3>
+                <p class="text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  ratione, error asperiores nam ut voluptatum!
+                </p>
+                <h4 class="light mt-1">Read more</h4>
+              </a>
             </div>
           </div>
           <div class="row h-40">
-            <div class="col-4 flex-column p-5 hover-background">
-              <img src="icons/0-circle.svg" alt="icon" class="h-50" />
-              <h3 class="my-1">Lorem, ipsum dolor.</h3>
-              <p class="text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-                ratione, error asperiores nam ut voluptatum!
-              </p>
-              <h4 class="light mt-1">Read more</h4>
+            <div class="col-4">
+              <a href="" class="card w-90 h-90 hover-background text-center">
+                <img src="icons/0-circle.svg" alt="icon" class="h-30" />
+                <h3 class="my-1">Lorem, ipsum dolor.</h3>
+                <p class="text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  ratione, error asperiores nam ut voluptatum!
+                </p>
+                <h4 class="light mt-1">Read more</h4>
+              </a>
             </div>
-            <div class="col-4 flex-column p-5 hover-background">
-              <img src="icons/0-circle.svg" alt="icon" class="h-50" />
-              <h3 class="my-1">Lorem, ipsum dolor.</h3>
-              <p class="text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-                ratione, error asperiores nam ut voluptatum!
-              </p>
-              <h4 class="light mt-1">Read more</h4>
+            <div class="col-4">
+              <a href="" class="card w-90 h-90 hover-background text-center">
+                <img src="icons/0-circle.svg" alt="icon" class="h-30" />
+                <h3 class="my-1">Lorem, ipsum dolor.</h3>
+                <p class="text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  ratione, error asperiores nam ut voluptatum!
+                </p>
+                <h4 class="light mt-1">Read more</h4>
+              </a>
             </div>
-            <div class="col-4 flex-column p-5 hover-background">
-              <img src="icons/0-circle.svg" alt="icon" class="h-50" />
-              <h3 class="my-1">Lorem, ipsum dolor.</h3>
-              <p class="text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-                ratione, error asperiores nam ut voluptatum!
-              </p>
-              <h4 class="light mt-1">Read more</h4>
+            <div class="col-4">
+              <a href="" class="card w-90 h-90 hover-background text-center">
+                <img src="icons/0-circle.svg" alt="icon" class="h-30" />
+                <h3 class="my-1">Lorem, ipsum dolor.</h3>
+                <p class="text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  ratione, error asperiores nam ut voluptatum!
+                </p>
+                <h4 class="light mt-1">Read more</h4>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="container-fluid px-15" style="height: 40vw">
+        <div class="container-fluid px-15" style="height: 35vw">
           <div class="row h-50">
             <div class="col-12 flex-column">
               <h4>Lorem ipsum dolor sit amet.</h4>
               <h1 class="my-2">Lorem ipsum dolor sit amet, consectetur</h1>
-              <p class="text-center">
+              <p class="text-center w-60">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
                 pariatur error perspiciatis Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quae, iste.
@@ -283,7 +299,7 @@
         </div>
       </section>
       <section>
-        <div class="container-fluid mt-10 px-15" style="height: 45vw">
+        <div class="container-fluid px-15" style="height: 47vw">
           <div class="row">
             <div class="col-6 flex-column align-start">
               <h4>Lorem ipsum dolor sit amet.</h4>
@@ -297,9 +313,11 @@
               >
             </div>
             <div class="col-3 flex-column">
-              <div class="w-90 h-30 d-flex flex-column align-start p-1 card mb-3">
+              <div
+                class="w-90 h-30 d-flex flex-column align-start p-1 card mb-3"
+              >
                 <img src="icons/0-circle.svg" alt="icon" class="h-30" />
-                <h3 class="my-1">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="my-1">Lorem ipsum dolor.</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam molestiae atque iste illo, quod qui earum!
@@ -307,7 +325,7 @@
               </div>
               <div class="w-90 h-30 d-flex flex-column align-start p-1 card">
                 <img src="icons/0-circle.svg" alt="icon" class="h-30" />
-                <h3 class="my-1">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="my-1">Lorem ipsum dolorr</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam molestiae atque iste illo, quod qui earum!
@@ -317,15 +335,17 @@
             <div class="col-3 flex-column">
               <div class="w-90 h-30 d-flex flex-column align-start p-1 card">
                 <img src="icons/0-circle.svg" alt="icon" class="h-30" />
-                <h3 class="my-1">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="my-1">Lorem ipsum dolor.</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam molestiae atque iste illo, quod qui earum!!
                 </p>
               </div>
-              <div class="w-90 h-30 d-flex flex-column align-start p-1 card my-3">
+              <div
+                class="w-90 h-30 d-flex flex-column align-start p-1 card my-3"
+              >
                 <img src="icons/0-circle.svg" alt="icon" class="h-30" />
-                <h3 class="my-1">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="my-1">Lorem ipsum dolor.</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam molestiae atque iste illo, quod qui earum!
@@ -333,7 +353,7 @@
               </div>
               <div class="w-90 h-30 d-flex flex-column align-start p-1 card">
                 <img src="icons/0-circle.svg" alt="icon" class="h-30" />
-                <h3 class="my-1">Lorem ipsum dolor sit amet.</h3    >
+                <h3 class="my-1">Lorem ipsum dolor.</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam molestiae atque iste illo, quod qui earum!
