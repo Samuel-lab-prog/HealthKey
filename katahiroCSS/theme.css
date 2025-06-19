@@ -1,6 +1,6 @@
 :root {
-  --color-1: #05852b;
-  --color-2: #02f065;
+  --color-1: #006f0b;
+  --color-2: #04bd51;
   --color-3: #02611f;
   --color-4: #006920;
   --color-5: #006920;
@@ -75,6 +75,7 @@ body {
 h1 {
   font-size: var(--font-1);
   font-family: var(--font-primary);
+
 }
 h2 {
   font-size: var(--font-2);
@@ -93,11 +94,17 @@ h6 {
 }
 a {
   font-size: var(--font-4);
+  display: inline-block;
+  width: auto;
 }
 p{
-  font-size: var(--font-3);
+  font-size: var(--font-4);
 }
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 .selected {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -105,10 +112,10 @@ p{
 .background {
   padding: 10px;
   background-color: var(--light);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 input[type="email"] {
-  border: 2px solid #ececec;
+  border: 2px solid var(--light);
   padding: 10px;
   border-radius: 10px;
   outline: none;
@@ -117,26 +124,37 @@ input[type="email"] {
 }
 
 input[type="email"]:focus {
-  border-color: #4caf50;
-  box-shadow: 0 0 10px #4caf50;
+  border-color: var(--color-1);
+  box-shadow: 0 0 20px var(--color-2);
   background-color: #f9fff9;
   transform: scale(1.02);
 }
 
+.card{
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--color-1);
+  display: block;
+  box-shadow: 0 0 10px var(--dark);
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 .hover-underline {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
-
 .hover-underline::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0%;
   height: 3px;
-  background-color: rgb(11, 11, 11);
+  background-color: var(--color-2);
   transition: width 0.3s ease;
 }
 
@@ -171,22 +189,14 @@ input[type="email"]:focus {
 }
 
 .hover-background {
-  border-radius: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 0 0 transparent;
 }
 
 .hover-background:hover {
-  cursor: pointer;
   background-color: var(--color-1);
-  color: white;
-  border-color: whitesmoke;
-  box-shadow: 0 0 15px var(--dark);
-  transform: translateY(-5px);
+  color: var(--light) ;
+  border-color: #00f0ff; 
+  box-shadow: 0 0 20px #00f0ff; 
+  transform: translateY(-5px); 
 }
-.card{
-  border-radius: 15px;
-  padding: 10px;
-  background-color: var(--color-1);
-  display: block;
-}
+

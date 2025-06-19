@@ -1,3 +1,4 @@
+
 $unit1: 5px;
 $unit2: 10px;
 $unit3: 15px;
@@ -20,7 +21,16 @@ $unit4: 20px;
     .pr-#{$i}{padding-right: $i * $unit2;}
     .pb-#{$i}{padding-bottom: $i * $unit2;}
 
-    .fs-#{$i}{font-size: $i * $unit1;}
+    .border-r-#{$i}{border: $i * $unit2;}
 
-    .border-rad-#{$i}{border: $i * $unit1;}
+    .gap-#{$i} {gap: $i * $unit2;}
+    .gapx#{$i} {row-gap: $i * $unit2;}
+    .gapy-#{$i} {column-gap: $i * $unit2;}
+
+    .z-#{$i} {z-index: $i;}
+
+
+}
+@for $i from 1 through 10{
+    .opacity-#{$i} {opacity: $i/10;}
 }
