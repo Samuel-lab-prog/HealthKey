@@ -1,0 +1,260 @@
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+$breakpoints: (
+  mobile: 600px,
+  tablet: 768px,
+  small-laptop: 1024px,
+  desktop: 1200px,
+  large-desktop: 1500px,
+);
+
+@mixin respond($device) {
+  @if map-has-key($breakpoints, $device) {
+    @media (max-width: map-get($breakpoints, $device)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$device}' não existe.";
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+:root {
+  --color-1: #006f0b;
+  --color-2: #04bd51;
+  --color-3: #02611f;
+  --color-4: #006920;
+  --color-5: #006920;
+  --light: #f3f0f0;
+  --dark: #222222;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+
+  --font-1: 84px;
+  --font-2: 72px;
+  --font-3: 60px;
+  --font-4: 48px;
+  --font-5: 36px;
+  --font-6: 24px;
+  --font-7: 12px;
+}
+body {
+  background-color: var(--light);
+  font-family: var(--font-secondary);
+  color: var(dark);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+.color-1 {
+  color: var(--color-1) !important;
+}
+.color-2 {
+  color: var(--color-2) !important;
+}
+.color-3 {
+  color: var(--color-3) !important;
+}
+.color-4 {
+  color: var(--color-4) !important;
+}
+.color-5 {
+  color: var(--color-5) !important;
+}
+.light {
+  color: var(--light) !important;
+}
+.dark {
+  color: var(--dark) !important;
+}
+.bg-light {
+  background-color: var(--light) !important;
+}
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.bg-1 {
+  background-color: var(--color-1) !important;
+}
+.bg-2 {
+  background-color: var(--color-2) !important;
+}
+.bg-3 {
+  background-color: var(--color-3) !important;
+}
+.bg-4 {
+  background-color: var(--color-4) !important;
+}
+.bg-5 {
+  background-color: var(--color-5) !important;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+h1 {
+  font-size: var(--font-1);
+  font-family: var(--font-primary);
+
+  @include respond(large-desktop) {
+    font-size: var(--font-3);
+  }
+  @include respond(desktop) {
+    font-size: var(--font-4);
+  }
+
+  @include respond(small-laptop) {
+    font-size: var(--font-5);
+  }
+  @include respond(tablet) {
+    font-size: var(--font-6);
+  }
+  @include respond(mobile) {
+    font-size: var(--font-7);
+  }
+}
+h2 {
+  font-size: var(--font-4);
+
+  @include respond(large-desktop) {
+    font-size: var(--font-4);
+  }
+  @include respond(desktop) {
+    font-size: var(--font-5);
+  }
+
+  @include respond(small-laptop) {
+    font-size: var(--font-6);
+  }
+  @include respond(tablet) {
+    font-size: var(--font-7);
+  }
+  @include respond(mobile) {
+    font-size: var(--font-7);
+  }
+}
+h3 {
+  font-size: var(--font-6);
+}
+a {
+  font-size: var(--font-6);
+  display: inline-block;
+  width: auto;
+}
+p {
+  font-size: var(--font-6);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+.selected {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.background {
+  padding: 10px;
+  background-color: var(--light);
+  border-radius: 10px;
+}
+input[type="email"] {
+  border: 2px solid var(--light);
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: var(--font-4);
+}
+
+input[type="email"]:focus {
+  border-color: var(--color-1);
+  box-shadow: 0 0 20px var(--color-2);
+  background-color: #f9fff9;
+  transform: scale(1.02);
+}
+
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--color-1);
+  display: block;
+  box-shadow: 0 0 10px var(--dark);
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+.hover-underline {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: var(--color-2);
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+.hover-darken:hover {
+  filter: brightness(85%);
+  transition: filter 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 16px rgba(214, 214, 214, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-color-swap {
+  background-color: var(--color-primary);
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-color-swap:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.hover-background {
+  transition: all 0.3s ease;
+}
+
+.hover-background:hover {
+  background-color: var(--color-1);
+  color: var(--light);
+  border-color: var(--color-1);
+  box-shadow: 0 0 20px var(--color-1);
+  transform: translateY(-5px);
+}
